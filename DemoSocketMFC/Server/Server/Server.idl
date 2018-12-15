@@ -1,0 +1,29 @@
+﻿// Server.idl: Server.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(Server.tlb)。
+
+[ uuid(2df69eb6-cf60-49d5-88a4-8f278c297d96), version(1.0) ]
+library Server
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CServerDoc 的主调度接口
+
+	[ uuid(e56a7148-7a36-435e-8eda-17b69df8d784) ]
+	dispinterface IServer
+	{
+		properties:
+
+		methods:
+	};
+
+	//  CServerDoc 的类信息
+
+	[ uuid(7d3a666a-8462-4126-829b-2939e7cd207c) ]
+	coclass Server
+	{
+		[default] dispinterface IServer;
+	};
+};
